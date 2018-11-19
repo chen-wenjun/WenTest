@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.4.js"></script>
+</head>
+<body on>
+    <div id="div1">
+        albe
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$.ajax({
+
+            //    url: 'https://www.yammer.com/api/v1/messages.json',
+            //    //data: myData,
+            //    type: 'POST',
+            //    contentType: "application/json",
+            //    //crossDomain: true,
+            //    //dataType: 'jsonp',
+            //    //jsonp: false,
+            //    success: function () { alert("Success"); },
+            //    error: function () { alert('Failed!'); },
+            //    beforeSend: setHeader
+            //});
+
+            $.ajax({
+
+                url: 'https://www.yammer.com/api/v1/messages.json',
+                //data: myData,
+                type: 'GET',
+                contentType: "application/json",
+                //crossDomain: true,
+                //dataType: 'jsonp',
+                //jsonp: false,
+                success: function () { alert("Success"); },
+                error: function () { alert('Failed!'); },
+                beforeSend: setHeader
+            });
+
+        });
+
+        function setHeader(xhr) {
+
+            xhr.setRequestHeader('Authorization', 'Bearer q0GDG1ayUuRat4Vp8H8LA');
+        }
+
+    </script>
+</body>
+</html>

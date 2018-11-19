@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://raymark.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://raymark.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service to activate the license</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://raymark.com/webservices/">
+      <s:element name="GetActivationKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="activationCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivationKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActivationKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransferLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oldSerialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldActivationCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newActivationCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransferLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransferLicenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsAvailable">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsAvailableResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpiryDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpiryDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExpiryDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetToday">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTodayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTodayResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetActivationKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetActivationKey" />
+  </wsdl:message>
+  <wsdl:message name="GetActivationKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetActivationKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:TransferLicense" />
+  </wsdl:message>
+  <wsdl:message name="TransferLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:TransferLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:IsAvailable" />
+  </wsdl:message>
+  <wsdl:message name="IsAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:IsAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpiryDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpiryDate" />
+  </wsdl:message>
+  <wsdl:message name="GetExpiryDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpiryDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTodaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetToday" />
+  </wsdl:message>
+  <wsdl:message name="GetTodaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetTodayResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebActivateLicenseSoap">
+    <wsdl:operation name="GetActivationKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is to activate the license online by passing the serial number and the activation code.</wsdl:documentation>
+      <wsdl:input message="tns:GetActivationKeySoapIn" />
+      <wsdl:output message="tns:GetActivationKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferLicense">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to transfer a license from one physical location to another. Note that only the floating server license or a standard license can be transferred.</wsdl:documentation>
+      <wsdl:input message="tns:TransferLicenseSoapIn" />
+      <wsdl:output message="tns:TransferLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAvailable">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to test the availability of the server to process the license activation request.</wsdl:documentation>
+      <wsdl:input message="tns:IsAvailableSoapIn" />
+      <wsdl:output message="tns:IsAvailableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpiryDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is to get activation expiry date by passing the serial number.</wsdl:documentation>
+      <wsdl:input message="tns:GetExpiryDateSoapIn" />
+      <wsdl:output message="tns:GetExpiryDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetToday">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is to get server time</wsdl:documentation>
+      <wsdl:input message="tns:GetTodaySoapIn" />
+      <wsdl:output message="tns:GetTodaySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebActivateLicenseSoap" type="tns:WebActivateLicenseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetActivationKey">
+      <soap:operation soapAction="http://raymark.com/webservices/GetActivationKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferLicense">
+      <soap:operation soapAction="http://raymark.com/webservices/TransferLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAvailable">
+      <soap:operation soapAction="http://raymark.com/webservices/IsAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpiryDate">
+      <soap:operation soapAction="http://raymark.com/webservices/GetExpiryDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetToday">
+      <soap:operation soapAction="http://raymark.com/webservices/GetToday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebActivateLicenseSoap12" type="tns:WebActivateLicenseSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetActivationKey">
+      <soap12:operation soapAction="http://raymark.com/webservices/GetActivationKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferLicense">
+      <soap12:operation soapAction="http://raymark.com/webservices/TransferLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAvailable">
+      <soap12:operation soapAction="http://raymark.com/webservices/IsAvailable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpiryDate">
+      <soap12:operation soapAction="http://raymark.com/webservices/GetExpiryDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetToday">
+      <soap12:operation soapAction="http://raymark.com/webservices/GetToday" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebActivateLicense">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web service to activate the license</wsdl:documentation>
+    <wsdl:port name="WebActivateLicenseSoap" binding="tns:WebActivateLicenseSoap">
+      <soap:address location="http://webhostsql.raymark.com/Raymark.LC.WebLicenseActivation/LicenseActivation.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebActivateLicenseSoap12" binding="tns:WebActivateLicenseSoap12">
+      <soap12:address location="http://webhostsql.raymark.com/Raymark.LC.WebLicenseActivation/LicenseActivation.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

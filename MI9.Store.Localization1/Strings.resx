@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MmsEmptyXml" xml:space="preserve">
+    <value>Mms didn't find data for this sku</value>
+  </data>
+  <data name="PendingPrice" xml:space="preserve">
+    <value>Pending Price</value>
+  </data>
+  <data name="PhysicalInventoryDuplicatedError" xml:space="preserve">
+    <value>There is a Physical Inventory with the same Start Date: </value>
+  </data>
+  <data name="PhyInvPreCountSchedDeleteError" xml:space="preserve">
+    <value>Unable to delete PreCount Scheduler</value>
+  </data>
+  <data name="PhysicalInventoryNotFound" xml:space="preserve">
+    <value>Unable to find a Physical Inventory.</value>
+  </data>
+  <data name="Pallet_Not_Found" xml:space="preserve">
+    <value>Pallet not found</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantCreateEmployeeRequestAbsence" xml:space="preserve">
+    <value>Can't create employee request absence</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantCreateRequestAbsenceDueToOverlappingRequestAbsence" xml:space="preserve">
+    <value>Can't create this request absence because will create an overlapping with existing request absence</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantCreateTrainingDayRequestDueToOverlappingRequestAbsence" xml:space="preserve">
+    <value>Can't create this training day because will create an overlapping with existing request absence</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantFidEmployee" xml:space="preserve">
+    <value>Can't find employee</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantUpdateEmployeeRequestAbsence" xml:space="preserve">
+    <value>Can't update employee request absence</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantUpdateGeneratedScheduleDaysAndTrainingDayAtSameTime" xml:space="preserve">
+    <value>Can't update GeneratedScheduleDays and Training Day at the same time</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantUpdateRequestAbsenceDueToOverlappingRequestAbsence" xml:space="preserve">
+    <value>Can't update this request absence because will create an overlapping with existing request absence</value>
+  </data>
+  <data name="LaborManagement_Maintenance_CantUpdateTrainingDayRequestDueToOverlappingRequestAbsence" xml:space="preserve">
+    <value>Can't update this training day because will create an overlapping with existing request absence</value>
+  </data>
+  <data name="CashManagement_CantFindCashierInformation" xml:space="preserve">
+    <value>Can't find cashier information</value>
+  </data>
+  <data name="CashManagement_CantFindCashOfficeConfiguration" xml:space="preserve">
+    <value>Can't find Cash Office configuration</value>
+  </data>
+  <data name="CashManagement_CantFindLoggedEmployeeInformation" xml:space="preserve">
+    <value>Can't find logged employee information</value>
+  </data>
+  <data name="CashManagement_CantFindRegisterInformation" xml:space="preserve">
+    <value>Can't find register information</value>
+  </data>
+  <data name="CashManagement_CantFindStoreAccountingPeriodInformation" xml:space="preserve">
+    <value>Can't find Store Accounting period information</value>
+  </data>
+  <data name="CashManagement_CantFindStoreInformation" xml:space="preserve">
+    <value>Can't find store information</value>
+  </data>
+  <data name="CashManagement_InvalidAmount" xml:space="preserve">
+    <value>Amount must be greater than 0.</value>
+  </data>
+  <data name="CashManagement_InvalidBalancingMethod" xml:space="preserve">
+    <value>Invalid Balancing Method.</value>
+  </data>
+  <data name="CashManagement_InvalidCashierId" xml:space="preserve">
+    <value>Invalid Cashier.</value>
+  </data>
+  <data name="CashManagement_InvalidDrawerNumber" xml:space="preserve">
+    <value>Drawer number must be between 1 and 3.</value>
+  </data>
+  <data name="CashManagement_InvalidRegisterId" xml:space="preserve">
+    <value>Invalid Register Id.</value>
+  </data>
+  <data name="CashManagement_NotEnoughFundsForLoan" xml:space="preserve">
+    <value>Not enough funds in safe to perform a loan</value>
+  </data>
+  <data name="CashManagement_StartingBankAlreadyCreatedForCashier" xml:space="preserve">
+    <value>Starting Bank already exists for cashier {0} with date {1} and drawer {2}</value>
+  </data>
+  <data name="CashManagement_StartingBankAlreadyCreatedForRegister" xml:space="preserve">
+    <value>Starting Bank already exists for register {0} with date {1} and drawer {2}</value>
+  </data>
+  <data name="CashManagement_InvalidLoanType" xml:space="preserve">
+    <value>Invalid Loan Type.</value>
+  </data>
+  <data name="CashManagement_CantFindTenderInformation" xml:space="preserve">
+    <value>Can't find information for tender with code {0}</value>
+  </data>
+  <data name="CashManagement_CantFindStartingBankInfoToPerformLoan" xml:space="preserve">
+    <value>Starting bank information not found. Can't make a loan without a previous starting bank</value>
+  </data>
+  <data name="CashManagement_CantFindStartingBankInfoToPerformPickup" xml:space="preserve">
+    <value>Starting bank information not found. Can't make a pickup without a previous starting bank</value>
+  </data>
+  <data name="CashManagement_InvalidLoanParameters" xml:space="preserve">
+    <value>Invalid loan parameters. There is not information to create the loan</value>
+  </data>
+  <data name="CashManagement_InvalidPickupParameters" xml:space="preserve">
+    <value>Invalid pickup parameters. There is not information to create the pickup</value>
+  </data>
+  <data name="CashManagement_CantFindCurrencyInformation" xml:space="preserve">
+    <value>Can't find information for currency with code {0} </value>
+  </data>
+  <data name="CashManagement_CannotDeposit" xml:space="preserve">
+    <value>Cannot deposit more than is in safe</value>
+  </data>
+  <data name="RegisterNotFound" xml:space="preserve">
+    <value>Unable to find a Register.</value>
+  </data>
+  <data name="CashManagement_CantFindBaseCurrencyInformation" xml:space="preserve">
+    <value>Can't find base currency information</value>
+  </data>
+  <data name="CashManagement_CantFindBaseTenderInformation" xml:space="preserve">
+    <value>Can't find base tender information</value>
+  </data>
+  <data name="CashManagement_CantChangeDepositStatus" xml:space="preserve">
+    <value>Can't change the status of the deposit.</value>
+  </data>
+  <data name="CashManagement_CantDeleteDepositExist" xml:space="preserve">
+    <value>Can't delete the deposit. Doesn't exist.</value>
+  </data>
+  <data name="CashManagement_CantDeleteDepositSafe" xml:space="preserve">
+    <value>Can't delete the deposit. No safe balance.</value>
+  </data>
+  <data name="CashManagement_CantFindDepositInformation" xml:space="preserve">
+    <value>Can't find the deposit.</value>
+  </data>
+  <data name="CashManagement_CantUpdateDepositExist" xml:space="preserve">
+    <value>Can't update the deposit. Doesn't exist.</value>
+  </data>
+  <data name="CashManagement_CantUpdateDepositUploaded" xml:space="preserve">
+    <value>This deposit has been uploaded and cannot be updated.</value>
+  </data>
+  <data name="CashManagement_CantPerformPickupOverDrawerOpenedOtherDateThanActivePeriod" xml:space="preserve">
+    <value>Can't perform a pickup over a drawer opened on different date than active period {0}</value>
+  </data>
+  <data name="CashManagement_CantDeleteDepositUploaded" xml:space="preserve">
+    <value>This deposit has been uploaded and cannot be deleted.</value>
+  </data>
+  <data name="CashManagement_CantFindPickup" xml:space="preserve">
+    <value>Can't find pickup</value>
+  </data>
+  <data name="CashManagement_DrawerClosed" xml:space="preserve">
+    <value>Can't perform loan. Drawer is closed</value>
+  </data>
+  <data name="CashManagement_BalancingMethodNotFound" xml:space="preserve">
+    <value>Balancing method argument not found.</value>
+  </data>
+  <data name="CashManagement_CannotDepositExist" xml:space="preserve">
+    <value>You can not create the deposit. It already exists.</value>
+  </data>
+  <data name="CashManagement_CannotDepositWrongNumber" xml:space="preserve">
+    <value>Cannot deposit. Deposit number is incorrect.</value>
+  </data>
+  <data name="CashManagement_CashSafeNotFound" xml:space="preserve">
+    <value>Unable to find a cash safe record for one tender {0} and currency {1}. Please verify the amountInSafe.</value>
+  </data>
+  <data name="CashManagement_DuplicatedTenderCurrencyId" xml:space="preserve">
+    <value>Invalid input pick up. Duplicated key &lt;TenderId, CurrencyId&gt;</value>
+  </data>
+  <data name="CashManagement_NotEnoughFundsForPickup" xml:space="preserve">
+    <value>Current balance is not enough to perform a pickup for tender: {0} ({1})</value>
+  </data>
+  <data name="CashManagement_CashSafeNotExist" xml:space="preserve">
+    <value>Unable to find a cash safe record for one tender {0} and currency {1}. Please verify the audit.</value>
+  </data>
+  <data name="CashManagement_DrawerBalancingWithoutZRead" xml:space="preserve">
+    <value>Can't make drawer balancing without make a Z-read.</value>
+  </data>
+  <data name="CashManagement_BalancingClosedDrawer" xml:space="preserve">
+    <value>Can't make balancing in closed drawer.</value>
+  </data>
+  <data name="CashManagement_NotDrawerInfo" xml:space="preserve">
+    <value>Drawer balancing information not found.</value>
+  </data>
+  <data name="CashManagement_DrawerUnbalanced" xml:space="preserve">
+    <value>Can't issue loan. ZRead already done. Drawer is ready for balance</value>
+  </data>
+  <data name="CashManagement_NotEnoughFundsForStartingBank" xml:space="preserve">
+    <value>Not enough funds in safe to issue a starting bank</value>
+  </data>
+  <data name="CashManagement_CantFindCashierDrawerBalance" xml:space="preserve">
+    <value>Can't find drawer balance for cashier {0} with date {1} and drawer {2}</value>
+  </data>
+  <data name="CashManagement_CantFindRegisterDrawerBalance" xml:space="preserve">
+    <value>Can't find drawer balance for register {0} with date {1} and drawer {2}</value>
+  </data>
+  <data name="CashManagement_DrawerNotIssued" xml:space="preserve">
+    <value>Can't perform pickup. Drawer not open.</value>
+  </data>
+  <data name="CashManagement_BalanceAlreadyDone" xml:space="preserve">
+    <value>Can't make balance. There is a balance already with that data.</value>
+  </data>
+  <data name="CashManagement_DrawerNotUnbalanced" xml:space="preserve">
+    <value>Can't make balance. Drawer must be in Unbalanced status.</value>
+  </data>
+  <data name="CashManagement_NotEnoughFundsForDeletePickup" xml:space="preserve">
+    <value>Not enough sufficient funds in safe to delete the pickup</value>
+  </data>
+  <data name="CashManagement_SomethingWrong" xml:space="preserve">
+    <value>Something went wrong. Please reload page.</value>
+  </data>
+  <data name="CashManagement_CantPerformPickupOverDrawerIfNotIssued" xml:space="preserve">
+    <value>Can't perform a pickup if drawer is not in status 'Issued'</value>
+  </data>
+</root>

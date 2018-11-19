@@ -1,0 +1,208 @@
+<AspDotNetStorefrontImport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Transaction>Product</Transaction>
+  <Product GUID="3bfbe6ea-955e-422f-99bc-fb3950a10b96" Action="Add">
+    <Name>Berne Hi Vis Lined Hooded Sweatshirt</Name>
+    <Summary>Berne Hi Vis Lined Hooded Sweatshirt</Summary>
+    <Description />
+    <SpecTitle xsi:nil="true" />
+    <MiscText xsi:nil="true" />
+    <Notes xsi:nil="true" />
+    <FroogleDescription xsi:nil="true" />
+    <SKU>HVF021</SKU>
+    <ManufacturerPartNumber xsi:nil="true" />
+    <SwatchImageMap xsi:nil="true" />
+    <SE xsi:nil="true" />
+    <SizeOptionPrompt xsi:nil="true" />
+    <ColorOptionPrompt xsi:nil="true" />
+    <ProductType xsi:nil="true" />
+    <TaxClass GUID="9cde8fbe-89c1-453f-aa8f-d8bff479cccb" />
+    <SalesPrompt xsi:nil="true" />
+    <SpecCall xsi:nil="true" />
+    <SpecsInline xsi:nil="true" />
+    <Display>
+      <XmlPackage xsi:type="xsd:string">product.SimpleProduct.xml.config</XmlPackage>
+      <ColWidth xsi:nil="true" />
+      <PageSize xsi:nil="true" />
+      <SkinID xsi:nil="true" />
+      <TemplateName xsi:nil="true" />
+    </Display>
+    <Images xsi:nil="true" />
+    <QuantityDiscount xsi:nil="true" />
+    <RelatedProducts xsi:nil="true" />
+    <UpsellProducts xsi:nil="true" />
+    <RequiresProducts xsi:nil="true" />
+    <InventoryType>
+      <TrackInventoryBySizeAndColor>true</TrackInventoryBySizeAndColor>
+      <WarehouseLocation xsi:nil="true" />
+    </InventoryType>
+    <Published>false</Published>
+    <TextOptionPrompt xsi:nil="true" />
+    <Mappings AutoCleanup="false" PreserveExistingRecords="true">
+      <Entity EntityType="Manufacturer" MappingName="BERNE" GUID="c5ae9438-bb93-48f3-81ef-d075747d4228" />
+      <Entity EntityType="Distributor" MappingName="50-0090119" GUID="423f3d56-3ba6-403f-b48e-9da19562a6d4" />
+      <Entity EntityType="Section" MappingName="Stage-Work-App" GUID="718b1761-e32a-43c3-9b64-a26478ccb1cf" />
+      <Entity EntityType="Category" MappingName="2X-Small" GUID="20d29769-5e11-437b-9595-bd5c6ce7e79f" />
+      <Entity EntityType="Category" MappingName="2X-Small-R" GUID="36989374-bb3f-4942-961f-75cc11bf21dc" />
+      <Entity EntityType="Category" MappingName="2X-Small-T" GUID="abd81465-770b-4121-8bdd-ee3f4d505226" />
+      <Entity EntityType="Category" MappingName="2X-Small-XT" GUID="619bdcbb-c589-4200-abe2-c09092090f9a" />
+      <Entity EntityType="Category" MappingName="X-Small" GUID="5dc61d21-bb73-4004-9cb3-48debcde5664" />
+      <Entity EntityType="Category" MappingName="X-Small-R" GUID="234e6ed3-0297-423f-80d2-6dff9e452ea4" />
+      <Entity EntityType="Category" MappingName="X-Small-T" GUID="7714eab2-f1be-477c-97fc-6d4a92c84a09" />
+      <Entity EntityType="Category" MappingName="X-Small-XT" GUID="796ad7ca-577b-4c3f-8fd0-aa9e75dbf638" />
+      <Entity EntityType="Category" MappingName="Small" GUID="b210e611-645e-45da-839f-91bc0f8082a7" />
+      <Entity EntityType="Category" MappingName="Small-R" GUID="09c06c52-ea83-4671-be5c-6c4695dc1948" />
+      <Entity EntityType="Category" MappingName="Small-T" GUID="dd2fc4e5-c2a2-45f6-9dd8-067a44774768" />
+      <Entity EntityType="Category" MappingName="Small-XT" GUID="086e875d-130b-47b0-bf0e-8d03bc4ae71f" />
+      <Entity EntityType="Category" MappingName="Medium" GUID="b719b1ae-8921-4970-a054-c02d7987458e" />
+      <Entity EntityType="Category" MappingName="Medium-R" GUID="4439ddbf-2d56-436b-ba5b-232bb0f72bf1" />
+      <Entity EntityType="Category" MappingName="Medium-T" GUID="13cdb1e9-3786-4c11-800f-52be806b1901" />
+      <Entity EntityType="Category" MappingName="Medium-XT" GUID="8f3bb9a5-18eb-48ec-861a-9d841e35751b" />
+      <Entity EntityType="Category" MappingName="Large" GUID="e943f0e1-9a65-49da-8e41-a9800baf1482" />
+      <Entity EntityType="Category" MappingName="Large-R" GUID="3a88c81a-e78a-4205-b8db-6e34dc784a7e" />
+      <Entity EntityType="Category" MappingName="Large-T" GUID="91c04622-edc6-429c-bcce-9afa62f57451" />
+      <Entity EntityType="Category" MappingName="Large-XT" GUID="b5edef11-8480-4adc-93e0-98a816e5c94d" />
+      <Entity EntityType="Category" MappingName="X-Large" GUID="7f56afcb-16cf-4f73-94b1-1b831cefe530" />
+      <Entity EntityType="Category" MappingName="X-Large-R" GUID="0c54634c-8734-4780-a4d3-b61d8b772f32" />
+      <Entity EntityType="Category" MappingName="X-Large-T" GUID="f7aa8e15-9966-4aff-b829-b017cd24753a" />
+      <Entity EntityType="Category" MappingName="X-Large-XT" GUID="b21f867d-1094-48f4-aaba-4a5645864a74" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE" GUID="988a1e30-33b9-42cc-8b05-fd2e89acab1a" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE-R" GUID="68cf5ff0-e22f-4d04-8128-35f8b902f5a2" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE-T" GUID="0f61b945-ffb6-4607-80b9-4af456edac87" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE-XT" GUID="91656f37-9c83-4d89-bc61-969dc20581b0" />
+      <Entity EntityType="Category" MappingName="2X-Large" GUID="d9494c7c-016c-4662-bd57-f93d1093007d" />
+      <Entity EntityType="Category" MappingName="2X-Large-R" GUID="8ed33a38-e9cf-4e38-a195-b8413f8f19a2" />
+      <Entity EntityType="Category" MappingName="2X-Large-T" GUID="01b9322f-cf5c-4e86-9ecb-46c2ee37dc2f" />
+      <Entity EntityType="Category" MappingName="2X-Large-XT" GUID="858aa3f5-d298-46fa-b1c6-d6d0a2557506" />
+      <Entity EntityType="Category" MappingName="3X-Large" GUID="8ce6d2bb-5bfc-4e70-ab30-502bbddad32a" />
+      <Entity EntityType="Category" MappingName="3X-Large-R" GUID="f5872f9d-b624-4f68-8764-ab3229bf5568" />
+      <Entity EntityType="Category" MappingName="3X-Large-T" GUID="4c77b959-1ef9-45d9-a137-aa63344d2407" />
+      <Entity EntityType="Category" MappingName="3X-Large-XT" GUID="d76aaa2d-3d1e-4c37-bbd1-f8fbeeeca447" />
+      <Entity EntityType="Category" MappingName="4X-Large" GUID="cadbe5f1-69cf-4971-81be-51b36afdb281" />
+      <Entity EntityType="Category" MappingName="4X-Large-R" GUID="cf4a619a-7192-4a84-8663-19e1fdfcfc74" />
+      <Entity EntityType="Category" MappingName="4X-Large-T" GUID="1b14dafe-32d1-4ae9-b488-2094c5619a4f" />
+      <Entity EntityType="Category" MappingName="4X-Large-XT" GUID="d647154e-18f3-406c-a081-fa3890c3f2a4" />
+      <Entity EntityType="Category" MappingName="5X-Large" GUID="d1b84f53-31e7-4708-aa2f-d197c5102f8d" />
+      <Entity EntityType="Category" MappingName="5X-Large-R" GUID="b8c9f3c7-264f-4b5e-9423-66bd90edadfa" />
+      <Entity EntityType="Category" MappingName="5X-Large-T" GUID="18dce67d-cce2-4112-9c8e-2cef862b4ff9" />
+      <Entity EntityType="Category" MappingName="5X-Large-XT" GUID="a28078ab-e853-493b-8d08-2d7f6f12bb36" />
+      <Entity EntityType="Category" MappingName="6X-LARGE" GUID="b89d2aef-f344-42b6-81b5-6c7f9c66b0ec" />
+      <Entity EntityType="Category" MappingName="6X-LARGE-R" GUID="f66fc3f5-9b0a-4cea-909d-23c9cd4fe25b" />
+      <Entity EntityType="Category" MappingName="6X-LARGE-T" GUID="3d2bcf13-1421-4104-8039-264abef21f77" />
+      <Entity EntityType="Category" MappingName="6X-LARGE-XT" GUID="473854f6-2673-490b-a9a7-ce22ab421a0d" />
+      <Entity EntityType="Category" MappingName="7X-LARGE" GUID="a89a213c-9ea5-4bb3-b4b2-dd3bfffbf88b" />
+      <Entity EntityType="Category" MappingName="7X-LARGE-R" GUID="57d9023f-f6d1-45d2-98ac-ee8109420284" />
+      <Entity EntityType="Category" MappingName="7X-LARGE-T" GUID="b40ec1d6-8b50-4663-b4c6-9bc5aad52007" />
+      <Entity EntityType="Category" MappingName="7X-LARGE-XT" GUID="ed1ab062-55ed-4367-a102-14572e3eb461" />
+      <Entity EntityType="Category" MappingName="2X-Small" GUID="20d29769-5e11-437b-9595-bd5c6ce7e79f" />
+      <Entity EntityType="Category" MappingName="2X-Small-R" GUID="36989374-bb3f-4942-961f-75cc11bf21dc" />
+      <Entity EntityType="Category" MappingName="2X-Small-T" GUID="abd81465-770b-4121-8bdd-ee3f4d505226" />
+      <Entity EntityType="Category" MappingName="2X-Small-XT" GUID="619bdcbb-c589-4200-abe2-c09092090f9a" />
+      <Entity EntityType="Category" MappingName="X-Small" GUID="5dc61d21-bb73-4004-9cb3-48debcde5664" />
+      <Entity EntityType="Category" MappingName="X-Small-R" GUID="234e6ed3-0297-423f-80d2-6dff9e452ea4" />
+      <Entity EntityType="Category" MappingName="X-Small-T" GUID="7714eab2-f1be-477c-97fc-6d4a92c84a09" />
+      <Entity EntityType="Category" MappingName="X-Small-XT" GUID="796ad7ca-577b-4c3f-8fd0-aa9e75dbf638" />
+      <Entity EntityType="Category" MappingName="Small" GUID="b210e611-645e-45da-839f-91bc0f8082a7" />
+      <Entity EntityType="Category" MappingName="Small-R" GUID="09c06c52-ea83-4671-be5c-6c4695dc1948" />
+      <Entity EntityType="Category" MappingName="Small-T" GUID="dd2fc4e5-c2a2-45f6-9dd8-067a44774768" />
+      <Entity EntityType="Category" MappingName="Small-XT" GUID="086e875d-130b-47b0-bf0e-8d03bc4ae71f" />
+      <Entity EntityType="Category" MappingName="Medium" GUID="b719b1ae-8921-4970-a054-c02d7987458e" />
+      <Entity EntityType="Category" MappingName="Medium-R" GUID="4439ddbf-2d56-436b-ba5b-232bb0f72bf1" />
+      <Entity EntityType="Category" MappingName="Medium-T" GUID="13cdb1e9-3786-4c11-800f-52be806b1901" />
+      <Entity EntityType="Category" MappingName="Medium-XT" GUID="8f3bb9a5-18eb-48ec-861a-9d841e35751b" />
+      <Entity EntityType="Category" MappingName="Large" GUID="e943f0e1-9a65-49da-8e41-a9800baf1482" />
+      <Entity EntityType="Category" MappingName="Large-R" GUID="3a88c81a-e78a-4205-b8db-6e34dc784a7e" />
+      <Entity EntityType="Category" MappingName="Large-T" GUID="91c04622-edc6-429c-bcce-9afa62f57451" />
+      <Entity EntityType="Category" MappingName="Large-XT" GUID="b5edef11-8480-4adc-93e0-98a816e5c94d" />
+      <Entity EntityType="Category" MappingName="X-Large" GUID="7f56afcb-16cf-4f73-94b1-1b831cefe530" />
+      <Entity EntityType="Category" MappingName="X-Large-R" GUID="0c54634c-8734-4780-a4d3-b61d8b772f32" />
+      <Entity EntityType="Category" MappingName="X-Large-T" GUID="f7aa8e15-9966-4aff-b829-b017cd24753a" />
+      <Entity EntityType="Category" MappingName="X-Large-XT" GUID="b21f867d-1094-48f4-aaba-4a5645864a74" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE" GUID="988a1e30-33b9-42cc-8b05-fd2e89acab1a" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE-R" GUID="68cf5ff0-e22f-4d04-8128-35f8b902f5a2" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE-T" GUID="0f61b945-ffb6-4607-80b9-4af456edac87" />
+      <Entity EntityType="Category" MappingName="1 X-LARGE-XT" GUID="91656f37-9c83-4d89-bc61-969dc20581b0" />
+      <Entity EntityType="Category" MappingName="2X-Large" GUID="d9494c7c-016c-4662-bd57-f93d1093007d" />
+      <Entity EntityType="Category" MappingName="2X-Large-R" GUID="8ed33a38-e9cf-4e38-a195-b8413f8f19a2" />
+      <Entity EntityType="Category" MappingName="2X-Large-T" GUID="01b9322f-cf5c-4e86-9ecb-46c2ee37dc2f" />
+      <Entity EntityType="Category" MappingName="2X-Large-XT" GUID="858aa3f5-d298-46fa-b1c6-d6d0a2557506" />
+      <Entity EntityType="Category" MappingName="3X-Large" GUID="8ce6d2bb-5bfc-4e70-ab30-502bbddad32a" />
+      <Entity EntityType="Category" MappingName="3X-Large-R" GUID="f5872f9d-b624-4f68-8764-ab3229bf5568" />
+      <Entity EntityType="Category" MappingName="3X-Large-T" GUID="4c77b959-1ef9-45d9-a137-aa63344d2407" />
+      <Entity EntityType="Category" MappingName="3X-Large-XT" GUID="d76aaa2d-3d1e-4c37-bbd1-f8fbeeeca447" />
+      <Entity EntityType="Category" MappingName="4X-Large" GUID="cadbe5f1-69cf-4971-81be-51b36afdb281" />
+      <Entity EntityType="Category" MappingName="4X-Large-R" GUID="cf4a619a-7192-4a84-8663-19e1fdfcfc74" />
+      <Entity EntityType="Category" MappingName="4X-Large-T" GUID="1b14dafe-32d1-4ae9-b488-2094c5619a4f" />
+      <Entity EntityType="Category" MappingName="4X-Large-XT" GUID="d647154e-18f3-406c-a081-fa3890c3f2a4" />
+      <Entity EntityType="Category" MappingName="5X-Large" GUID="d1b84f53-31e7-4708-aa2f-d197c5102f8d" />
+      <Entity EntityType="Category" MappingName="5X-Large-R" GUID="b8c9f3c7-264f-4b5e-9423-66bd90edadfa" />
+      <Entity EntityType="Category" MappingName="5X-Large-T" GUID="18dce67d-cce2-4112-9c8e-2cef862b4ff9" />
+      <Entity EntityType="Category" MappingName="5X-Large-XT" GUID="a28078ab-e853-493b-8d08-2d7f6f12bb36" />
+      <Entity EntityType="Category" MappingName="6X-LARGE" GUID="b89d2aef-f344-42b6-81b5-6c7f9c66b0ec" />
+      <Entity EntityType="Category" MappingName="6X-LARGE-R" GUID="f66fc3f5-9b0a-4cea-909d-23c9cd4fe25b" />
+      <Entity EntityType="Category" MappingName="6X-LARGE-T" GUID="3d2bcf13-1421-4104-8039-264abef21f77" />
+      <Entity EntityType="Category" MappingName="6X-LARGE-XT" GUID="473854f6-2673-490b-a9a7-ce22ab421a0d" />
+      <Entity EntityType="Category" MappingName="7X-LARGE" GUID="a89a213c-9ea5-4bb3-b4b2-dd3bfffbf88b" />
+      <Entity EntityType="Category" MappingName="7X-LARGE-R" GUID="57d9023f-f6d1-45d2-98ac-ee8109420284" />
+      <Entity EntityType="Category" MappingName="7X-LARGE-T" GUID="b40ec1d6-8b50-4663-b4c6-9bc5aad52007" />
+      <Entity EntityType="Category" MappingName="7X-LARGE-XT" GUID="ed1ab062-55ed-4367-a102-14572e3eb461" />
+      <Entity EntityType="Category" MappingName="Men" GUID="279ba0df-32d9-4cfe-b490-ed66358f59b1" />
+      <Entity EntityType="Category" MappingName="Less than $25" />
+    </Mappings>
+    <ExtensionData xsi:nil="true" />
+    <ExtensionData2 xsi:nil="true" />
+    <ExtensionData3 xsi:nil="true" />
+    <ExtensionData4 xsi:nil="true" />
+    <ExtensionData5 xsi:nil="true" />
+    <Variants>
+      <Variant GUID="3bfbe6ea-955e-422f-99bc-fb3950a10b96" Action="Add">
+        <IsDefault>true</IsDefault>
+        <VariantName />
+        <Description xsi:nil="true" />
+        <SE xsi:nil="true" />
+        <FroogleDescription xsi:nil="true" />
+        <VariantSKUSuffix xsi:nil="true" />
+        <ManufacturerPartNumber xsi:nil="true" />
+        <Price>59.99</Price>
+        <ExtendedPrices xsi:nil="true" />
+        <Dimensions xsi:nil="true" />
+        <InventoryBySizeAndColor xsi:nil="true" />
+        <Notes xsi:nil="true" />
+        <DownloadLocation xsi:nil="true" />
+        <Published>true</Published>
+        <Wholesale xsi:nil="true" />
+        <Images xsi:nil="true" />
+        <ExtensionData xsi:nil="true" />
+        <ExtensionData2 xsi:nil="true" />
+        <ExtensionData3 xsi:nil="true" />
+        <ExtensionData4 xsi:nil="true" />
+        <ExtensionData5 xsi:nil="true" />
+        <Sizes>
+          <Size SKUModifier="1">Small</Size>
+          <Size SKUModifier="2">Medium</Size>
+          <Size SKUModifier="3">Large</Size>
+          <Size SKUModifier="4">Large-T</Size>
+          <Size SKUModifier="5">X-Large</Size>
+          <Size SKUModifier="6">X-Large-T</Size>
+          <Size SKUModifier="7" PriceModifier="5.00">2X-Large</Size>
+          <Size SKUModifier="8" PriceModifier="5.00">2X-Large-T</Size>
+          <Size SKUModifier="9" PriceModifier="5.00">3X-Large</Size>
+          <Size SKUModifier="10" PriceModifier="5.00">3X-Large-T</Size>
+          <Size SKUModifier="11" PriceModifier="5.00">4X-Large</Size>
+          <Size SKUModifier="12" PriceModifier="5.00">4X-Large-T</Size>
+          <Size SKUModifier="13" PriceModifier="5.00">5X-Large</Size>
+          <Size SKUModifier="14" PriceModifier="5.00">5X-Large-T</Size>
+          <Size SKUModifier="15" PriceModifier="5.00">6X-LARGE</Size>
+          <Size SKUModifier="16" PriceModifier="5.00">6X-LARGE-T</Size>
+        </Sizes>
+        <Colors>
+          <Color SKUModifier="1">HI-VIS YELLOW</Color>
+          <Color SKUModifier="2">HI-VIS ORANGE</Color>
+        </Colors>
+        <ShippingCosts xsi:nil="true" />
+      </Variant>
+    </Variants>
+    <StoreMappings>
+      <StoreMapping ProductGuid="3bfbe6ea-955e-422f-99bc-fb3950a10b96" StoreCode="WNGBlue" />
+    </StoreMappings>
+  </Product>
+</AspDotNetStorefrontImport>

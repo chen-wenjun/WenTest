@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AF12A4A-4BC6-4EDF-BA87-7BB9FCE62B4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mi9.Store.ViewModels</RootNamespace>
+    <AssemblyName>Mi9.Store.ViewModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmployeeEntity.cs" />
+    <Compile Include="IAuditableEntity.cs" />
+    <Compile Include="PrinterEntity.cs" />
+    <Compile Include="ViewModels\CmBalanceSummaryViewModel.cs" />
+    <Compile Include="ViewModels\CmDashboardViewModel.cs" />
+    <Compile Include="ViewModels\AuditDialogItemViewModel.cs" />
+    <Compile Include="ViewModels\AuditDialogViewModel.cs" />
+    <Compile Include="ViewModels\CashierViewModel.cs" />
+    <Compile Include="ViewModels\CmAuditViewModel.cs" />
+    <Compile Include="ViewModels\CmControlViewModel.cs" />
+    <Compile Include="ViewModels\CmCurrencyViewModel.cs" />
+    <Compile Include="ViewModels\CmDepositDetailViewModel.cs" />
+    <Compile Include="ViewModels\CmDepositsViewModel.cs" />
+    <Compile Include="ViewModels\CmDepositViewModel.cs" />
+    <Compile Include="ViewModels\CmDrawerTenderViewModel.cs" />
+    <Compile Include="ViewModels\CmMaintenanceDetailViewModel.cs" />
+    <Compile Include="ViewModels\CmAdjustViewModel.cs" />
+    <Compile Include="ViewModels\CmReportViewModel.cs" />
+    <Compile Include="ViewModels\CmSafeBalanceViewModel.cs" />
+    <Compile Include="ViewModels\CmDenominationViewModel.cs" />
+    <Compile Include="ViewModels\CmStoreViewModel.cs" />
+    <Compile Include="ViewModels\CmTenderViewModel.cs" />
+    <Compile Include="ViewModels\CmDrawerViewModel.cs" />
+    <Compile Include="ViewModels\CmBalanceViewModel.cs" />
+    <Compile Include="ViewModels\CmOwnerViewModel.cs" />
+    <Compile Include="ViewModels\Enums\CashOfficeAdjustStatuses.cs" />
+    <Compile Include="ViewModels\Enums\CashOfficeDrawerStatuses.cs" />
+    <Compile Include="ViewModels\DrawerViewModel.cs" />
+    <Compile Include="ViewModels\CmPickUpTenderViewModel.cs" />
+    <Compile Include="ViewModels\CmPickUpViewModel.cs" />
+    <Compile Include="ViewModels\Enums\BalancingMethods.cs" />
+    <Compile Include="ViewModels\Enums\CashOfficeLoanTypes.cs" />
+    <Compile Include="ViewModels\Enums\CashOfficeAdjustReasons.cs" />
+    <Compile Include="ViewModels\Enums\FloatCashierTypes.cs" />
+    <Compile Include="ViewModels\CmPickUpSummaryViewModel.cs" />
+    <Compile Include="ViewModels\SafeBalanceViewModel.cs" />
+    <Compile Include="ViewModels\CmLoanViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\TenderDenominationViewModel.cs" />
+    <Compile Include="ViewModels\LaborManagementEmployeeTwoMonthAbsenceResquestViewModel.cs" />
+    <Compile Include="ViewModels\LaborManagementEmployeeDayAbsenceViewModel.cs" />
+    <Compile Include="ViewModels\LaborManagementEmployeeTwoMonthAbsenceViewModel.cs" />
+    <Compile Include="ViewModels\FixedSchedulePutViewModel.cs" />
+    <Compile Include="ViewModels\FixedScheduleViewModel.cs" />
+    <Compile Include="ViewModels\FixedTimeOffDayViewModel.cs" />
+    <Compile Include="ViewModels\FixedTimeOffPutViewModel.cs" />
+    <Compile Include="ViewModels\FixedTimeOffViewModel.cs" />
+    <Compile Include="ViewModels\GeneratedTimeOffDayViewModel.cs" />
+    <Compile Include="ViewModels\GeneratedTimeOffPutViewModel.cs" />
+    <Compile Include="ViewModels\GeneratedTimeOffViewModel.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupEmployeeCatalogs.cs" />
+    <Compile Include="ViewModels\OpenHoleFirstPhoneViewModel.cs" />
+    <Compile Include="Converters\DateUtils.cs" />
+    <Compile Include="ViewModels\AdjustQuantityViewModel.cs" />
+    <Compile Include="Converters\IsoUtcDateTimeConverter.cs" />
+    <Compile Include="ViewModels\AddressViewModel.cs" />
+    <Compile Include="ViewModels\Catalogs\InventoryStatus.cs" />
+    <Compile Include="ViewModels\Catalogs\PhyInvPreCountStatus.cs" />
+    <Compile Include="ViewModels\Catalogs\PhysicalInventoryStatus.cs" />
+    <Compile Include="ViewModels\HoleIdPackdownIdViewModel.cs" />
+    <Compile Include="ViewModels\HoleSKUViewModel.cs" />
+    <Compile Include="ViewModels\InventoryAdjustmentViewModel.cs" />
+    <Compile Include="ViewModels\PackDownHeaderViewModel.cs" />
+    <Compile Include="ViewModels\PackDownViewModel.cs" />
+    <Compile Include="ViewModels\PackDownZoneViewModel.cs" />
+    <Compile Include="ViewModels\PackViewModel.cs" />
+    <Compile Include="ViewModels\Enums\AbsenceReasons.cs" />
+    <Compile Include="ViewModels\CompetitorSearchViewModel.cs" />
+    <Compile Include="ViewModels\CompetitorViewModel.cs" />
+    <Compile Include="ViewModels\CountryDefinitionViewModel.cs" />
+    <Compile Include="ViewModels\CountryViewModel.cs" />
+    <Compile Include="ViewModels\CustomerBaseViewModel.cs" />
+    <Compile Include="ViewModels\CustomerOrderHistoryViewModel.cs" />
+    <Compile Include="ViewModels\CustomerProjectsViewModel.cs" />
+    <Compile Include="ViewModels\CustomerSearchRequestViewModel.cs" />
+    <Compile Include="ViewModels\CustomersSearchViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\DeliveryCustomerViewModel.cs" />
+    <Compile Include="ViewModels\GenericCustomerContainerViewModel.cs" />
+    <Compile Include="ViewModels\RegularCustomerListViewModel.cs" />
+    <Compile Include="ViewModels\RequiredCreateCustomerViewModel.cs" />
+    <Compile Include="ViewModels\RequiredCustomerViewModel.cs" />
+    <Compile Include="ViewModels\StateViewModel.cs" />
+    <Compile Include="ViewModels\LaborManagementEmployeeMaintenanceCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\Enums\EmployeeStatuses.cs" />
+    <Compile Include="ViewModels\GeneratedSchedulePutViewModel.cs" />
+    <Compile Include="ViewModels\GeneratedScheduleViewModel.cs" />
+    <Compile Include="ViewModels\LaborManagementEmployeeScheduleCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\CustomerServiceDemandViewModel.cs" />
+    <Compile Include="ViewModels\ReasonTypeViewModel.cs" />
+    <Compile Include="ViewModels\RequestAbsenceViewModel.cs" />
+    <Compile Include="ViewModels\ScheduleDayPutViewModels.cs" />
+    <Compile Include="ViewModels\ScheduleDayViewModel.cs" />
+    <Compile Include="ViewModels\StorePurchaseOrderCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\CorrectTimeViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeTimeAttendanceModel.cs" />
+    <Compile Include="ViewModels\Enums\BooleanStatuses.cs" />
+    <Compile Include="ViewModels\Enums\Handheld\HandheldModuleEnum.cs" />
+    <Compile Include="ViewModels\Enums\ManualTimeEntryButonTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Enums\Handheld\LocationTypeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Enums\Handheld\LogPriorityEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Enums\Handheld\PrepLabelBayLevelEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\InventoryAdjustmentTotalsViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\InventoryInquiryItemViewModel.cs" />
+    <Compile Include="ViewModels\InventoryInquiryRequestViewModel.cs" />
+    <Compile Include="ViewModels\InventoryInquirySkuRequestViewModel.cs" />
+    <Compile Include="ViewModels\LaborManagementEmployeeIncidentsCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\Enums\SendingLocationTypes.cs" />
+    <Compile Include="ViewModels\JobClassViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BayViewModel.cs" />
+    <Compile Include="ViewModels\CancelledReceivedOrderItemsViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentClassViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentSubClassViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentViewModel.cs" />
+    <Compile Include="ViewModels\DestinationViewModel.cs" />
+    <Compile Include="ViewModels\DiscrepancyAttachmentViewModel.cs" />
+    <Compile Include="ViewModels\DiscrepancyCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\DiscrepancyDetailViewModel.cs" />
+    <Compile Include="ViewModels\DiscrepancyViewModel.cs" />
+    <Compile Include="ViewModels\DistrictViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeAreaViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeSalesViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\Enums\PromotionTypes.cs" />
+    <Compile Include="ViewModels\Enums\CustomerOrderStatuses.cs" />
+    <Compile Include="ViewModels\Enums\CustomerTypes.cs" />
+    <Compile Include="ViewModels\Enums\DiscrepancyActions.cs" />
+    <Compile Include="ViewModels\Enums\DiscrepancyStatuses.cs" />
+    <Compile Include="ViewModels\Enums\DiscrepancyTypes.cs" />
+    <Compile Include="ViewModels\Enums\EnumExtensions.cs" />
+    <Compile Include="ViewModels\Enums\EnumHelper.cs" />
+    <Compile Include="ViewModels\Enums\LocationsTypes.cs" />
+    <Compile Include="ViewModels\Enums\PalletAuditStatus.cs" />
+    <Compile Include="ViewModels\Enums\PoTrackingLogTypes.cs" />
+    <Compile Include="ViewModels\Enums\PurchaseOrderAuthorizedStatuses.cs" />
+    <Compile Include="ViewModels\Enums\PurchaseOrderCancelStatuses.cs" />
+    <Compile Include="ViewModels\Enums\PurchaseOrderIsSystemGeneratedTypes.cs" />
+    <Compile Include="ViewModels\Enums\PurchaseOrderStatuses.cs" />
+    <Compile Include="ViewModels\Enums\PurchaseOrderTypes.cs" />
+    <Compile Include="ViewModels\Enums\ShipmentMethods.cs" />
+    <Compile Include="ViewModels\Enums\ShipmentStatus.cs" />
+    <Compile Include="ViewModels\Enums\ShipmentTypes.cs" />
+    <Compile Include="ViewModels\Enums\SkuItemTypes.cs" />
+    <Compile Include="ViewModels\Enums\SkuLabelTypes.cs" />
+    <Compile Include="ViewModels\Enums\SkuStatusCodes.cs" />
+    <Compile Include="ViewModels\Enums\SkuStatuses.cs" />
+    <Compile Include="ViewModels\Enums\SkuTypes.cs" />
+    <Compile Include="ViewModels\Enums\SkuUniqueItemCodes.cs" />
+    <Compile Include="ViewModels\Enums\SpecialOrderStatuses.cs" />
+    <Compile Include="ViewModels\Enums\Stores.cs" />
+    <Compile Include="ViewModels\Enums\StoreStatuses.cs" />
+    <Compile Include="ViewModels\Enums\TransferStatuses.cs" />
+    <Compile Include="ViewModels\Enums\TransferTypes.cs" />
+    <Compile Include="ViewModels\Enums\VendorShipTypes.cs" />
+    <Compile Include="ViewModels\Enums\VendorStatuses.cs" />
+    <Compile Include="ViewModels\IncidentTypeViewModel.cs" />
+    <Compile Include="ViewModels\InventoryViewModel.cs" />
+    <Compile Include="ViewModels\ItemPrintingSettingViewModel.cs" />
+    <Compile Include="ViewModels\LaborPutViewModel.cs" />
+    <Compile Include="ViewModels\LaborViewModel.cs" />
+    <Compile Include="ViewModels\LaborWithWeekViewModel.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\ILookupCatalogs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupTransactionCatalog.cs" />
+    <Compile Include="ViewModels\ManualTimeEntryViewModel.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupVendorCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupTransactionsRequest.cs" />
+    <Compile Include="ViewModels\PhyInvPreCountWeekViewModel.cs" />
+    <Compile Include="ViewModels\PhyInvPreCountMainViewModel.cs" />
+    <Compile Include="ViewModels\PhyInvPreCountSchedFilterViewModel.cs" />
+    <Compile Include="ViewModels\PhyInvPreCountSchedModel.cs" />
+    <Compile Include="ViewModels\PhyInvPreCountSchedViewModel.cs" />
+    <Compile Include="ViewModels\PhyInvReviewViewModel.cs" />
+    <Compile Include="ViewModels\ItemSkuViewModel.cs" />
+    <Compile Include="ViewModels\LabelConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\LabelPrintingViewModel.cs" />
+    <Compile Include="ViewModels\LabelToPrintViewModel.cs" />
+    <Compile Include="ViewModels\LabelTypeViewModel.cs" />
+    <Compile Include="ViewModels\LabelTypeMaintenanceViewModel.cs" />
+    <Compile Include="ViewModels\LabelTypeRelationshipViewModel.cs" />
+    <Compile Include="ViewModels\LastPrintingViewModel.cs" />
+    <Compile Include="ViewModels\LocationInquiryViewModel.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupDiscrepancyCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupItemSkuCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupPurchaseOrderCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupSpecialOrdersCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupStoreCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Catalogs\LookupTransferCatalogs.cs" />
+    <Compile Include="ViewModels\Lookups\Request\DepartmentSubClassRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupDiscrepanciesRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupEmployeesRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupItemSkusRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupPurchaseOrdersRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupSpecialOrdersRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupStoresRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupTransferRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Request\LookupVendorsRequest.cs" />
+    <Compile Include="ViewModels\Lookups\Response\ILookupResponse.cs" />
+    <Compile Include="ViewModels\Lookups\Response\LookupResponse.cs" />
+    <Compile Include="ViewModels\NotesAndHistoryViewModel.cs" />
+    <Compile Include="ViewModels\OrderItemViewModel.cs" />
+    <Compile Include="ViewModels\PalletDetailViewModel.cs" />
+    <Compile Include="ViewModels\PalletHeaderViewModel.cs" />
+    <Compile Include="ViewModels\PalletItemForAuditViewModel.cs" />
+    <Compile Include="ViewModels\PalletViewModel.cs" />
+    <Compile Include="ViewModels\PhyInvsImportTempViewModel.cs" />
+    <Compile Include="ViewModels\PhysicalInventoriesMainViewModel.cs" />
+    <Compile Include="ViewModels\PhysicalInventoryAdjExportViewModel.cs" />
+    <Compile Include="ViewModels\PhysicalinventoryAdjustmentItemInfoViewModel.cs" />
+    <Compile Include="ViewModels\PhysicalInventoryAdjustmentViewModel.cs" />
+    <Compile Include="ViewModels\PhysicalInventoryHeaderAdjViewModel.cs" />
+    <Compile Include="ViewModels\PhysicalInventoryViewModel.cs" />
+    <Compile Include="ViewModels\PrinterMaintenanceViewModel.cs" />
+    <Compile Include="ViewModels\PrintingStatusViewModel.cs" />
+    <Compile Include="ViewModels\PrintLocationMaintenanceViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseOrderControlViewModel.cs" />
+    <Compile Include="ViewModels\ReasonViewModel.cs" />
+    <Compile Include="ViewModels\ReceivingGridPrintViewModel.cs" />
+    <Compile Include="ViewModels\ReceivingPrintViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingCancelStatusViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingDetailViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingEmailAttachmentViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingEmailViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingEntryCustomerInfoViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingEntryVendorInfoViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingEntryViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingLogTypeViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingLogViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingStateViewModel.cs" />
+    <Compile Include="ViewModels\POTrackingUserViewModel.cs" />
+    <Compile Include="ViewModels\PromotionViewModel.cs" />
+    <Compile Include="ViewModels\POPurchaseOrderItemViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseHandheldViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseOrderItemInfoViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseOrderItemViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseOrderStatusViewModel.cs" />
+    <Compile Include="ViewModels\POPurchaseOrderViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseOrderViewModel.cs" />
+    <Compile Include="ViewModels\ReasonCodeViewModel.cs" />
+    <Compile Include="ViewModels\ResaleSpecialOrderItemViewModel.cs" />
+    <Compile Include="ViewModels\ReturnToVendorItemViewModel.cs" />
+    <Compile Include="ViewModels\ReturnToVendorStatusViewModel.cs" />
+    <Compile Include="ViewModels\ReturnToVendorTypeViewModel.cs" />
+    <Compile Include="ViewModels\ReturnToVendorViewModel.cs" />
+    <Compile Include="ViewModels\SeasonViewModel.cs" />
+    <Compile Include="ViewModels\SendingLocationTypeViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\ShipmentTypeViewModel.cs" />
+    <Compile Include="ViewModels\ShipmentViewModel.cs" />
+    <Compile Include="ViewModels\ShipMethodViewModel.cs" />
+    <Compile Include="ViewModels\SkuByStoreViewModel.cs" />
+    <Compile Include="ViewModels\SkuLabelPrintingViewModel.cs" />
+    <Compile Include="ViewModels\SKULocationViewModel.cs" />
+    <Compile Include="ViewModels\SkusByLabelToPrintViewModel.cs" />
+    <Compile Include="ViewModels\SkuViewModel.cs" />
+    <Compile Include="ViewModels\SpecialOrdersCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\SpecialOrdersResaleItemLinkViewModel.cs" />
+    <Compile Include="ViewModels\SpecialOrdersResaleViewViewModel.cs" />
+    <Compile Include="ViewModels\StartAutomaticInventoryAdjustmentPostViewModel.cs" />
+    <Compile Include="ViewModels\StoreViewModel.cs" />
+    <Compile Include="ViewModels\TaxViewModel.cs" />
+    <Compile Include="ViewModels\TenderViewModel.cs" />
+    <Compile Include="ViewModels\TimeIntervalsViewModel.cs" />
+    <Compile Include="ViewModels\TimeIntervalViewModel.cs" />
+    <Compile Include="ViewModels\TotalHoursViewModel.cs" />
+    <Compile Include="ViewModels\TransferCatalogsViewModel.cs" />
+    <Compile Include="ViewModels\TransferHandheldViewModel.cs" />
+    <Compile Include="ViewModels\TransferItemSuggestedViewModel.cs" />
+    <Compile Include="ViewModels\TransferMinimizedViewModel.cs" />
+    <Compile Include="ViewModels\TransferStatusViewModel.cs" />
+    <Compile Include="ViewModels\TransferSuggestionViewModel.cs" />
+    <Compile Include="ViewModels\TransferSummaryViewModel.cs" />
+    <Compile Include="ViewModels\TransferUDTViewModel.cs" />
+    <Compile Include="ViewModels\TransferViewModel.cs" />
+    <Compile Include="ViewModels\UnitOfMeasureViewModel.cs" />
+    <Compile Include="ViewModels\VendorAddressViewModel.cs" />
+    <Compile Include="ViewModels\VendorConditionsViewModel.cs" />
+    <Compile Include="ViewModels\VendorContactViewModel.cs" />
+    <Compile Include="ViewModels\VendorPackInfoViewModel.cs" />
+    <Compile Include="ViewModels\VendorRTVConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\VendorViewModel.cs" />
+    <Compile Include="ViewModels\WeekDayPutViewModel.cs" />
+    <Compile Include="ViewModels\WeekDayViewModel.cs" />
+    <Compile Include="ViewModels\WeekViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\ZoneViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MI9.Store.Localization1\MI9.Store.Localization.csproj">
+      <Project>{1c7a8613-c8a3-4478-ab81-f74981b346e8}</Project>
+      <Name>MI9.Store.Localization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!--<Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  -->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
